@@ -51,7 +51,7 @@ function FreeBook() {
 useEffect(()=>{
   const getBook = async()=>{
     try{
-     const res = await axios.get("http://localhost:3000/book") 
+     const res = await axios.get("https://react-project-backend-0ijt.onrender.com/book") 
      setBook(res.data)
     } 
     catch(error){
