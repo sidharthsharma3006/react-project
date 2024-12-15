@@ -13,7 +13,7 @@ function Login() {
      email: data.email, 
      password: data.password, 
     } 
-    await axios.post("http://localhost:3000/user/login",userInfo).then((res)=>{
+    await axios.post("https://react-project-backend-0ijt.onrender.com/user/login",userInfo).then((res)=>{
       console.log(res.data) 
       if(res.data){
         toast.success("Login Successfully") 
